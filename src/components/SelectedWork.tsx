@@ -4,43 +4,48 @@ import { ArrowUpRight, ExternalLink } from 'lucide-react';
 const projects = [
 {
   id: 1,
-  title: 'FinTech Dashboard',
-  category: 'Product Design',
-  year: '2023',
-  description: 'Modern banking interface with real-time analytics',
-  image:
-  'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1200',
-  tags: ['UI/UX', 'Dashboard', 'Analytics']
+  title: 'Business Portfolio',
+  category: 'Web Design',
+  year: '2024',
+  description: 'Professional portfolio layout for a modern brand.',
+  image: '/bussnuss portfolio.png',
+  tags: ['Portfolio', 'Branding', 'UI/UX']
 },
 {
   id: 2,
-  title: 'E-commerce Platform',
-  category: 'Web Development',
-  year: '2023',
-  description: 'Seamless shopping experience with minimal design',
-  image:
-  'https://images.unsplash.com/photo-1547658719-da2b51169166?auto=format&fit=crop&q=80&w=1200',
-  tags: ['E-commerce', 'Responsive', 'Mobile-first']
+  title: 'Hospital Management System',
+  category: 'Web Application',
+  year: '2024',
+  description: 'Streamlined hospital operations and patient records.',
+  image: '/hostital management systeem.png',
+  tags: ['Dashboard', 'Healthcare', 'Admin']
 },
 {
   id: 3,
-  title: 'SaaS Landing Page',
-  category: 'UX/UI Strategy',
-  year: '2022',
-  description: 'Conversion-focused design for B2B software',
-  image:
-  'https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?auto=format&fit=crop&q=80&w=1200',
-  tags: ['Landing Page', 'SaaS', 'Marketing']
+  title: 'Call Support Center',
+  category: 'Web Application',
+  year: '2024',
+  description: 'Agent-friendly interface for support workflows.',
+  image: '/Call support center.png',
+  tags: ['Support', 'CRM', 'Productivity']
 },
 {
   id: 4,
-  title: 'Mobile App Design',
-  category: 'Product Design',
-  year: '2023',
-  description: 'Intuitive health tracking mobile application',
-  image:
-  'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&q=80&w=1200',
-  tags: ['Mobile', 'Health Tech', 'iOS/Android']
+  title: 'Student Learning System',
+  category: 'Education Platform',
+  year: '2024',
+  description: 'Learning portal with clear progress tracking.',
+  image: '/studnt lerning systeem .png',
+  tags: ['EdTech', 'LMS', 'UX']
+},
+{
+  id: 5,
+  title: 'Travel Guide Website',
+  category: 'Marketing Site',
+  year: '2024',
+  description: 'Inspiring travel stories with rich visuals.',
+  image: '/travel guide website.png',
+  tags: ['Travel', 'Content', 'Web']
 }];
 
 export function SelectedWork() {
@@ -96,15 +101,19 @@ export function SelectedWork() {
               duration: 0.6,
               delay: index * 0.15
             }}
-            className="group cursor-pointer">
+            className="group">
 
-              <div className="relative overflow-hidden rounded-2xl bg-gray-100 dark:bg-gray-900 aspect-[16/10] mb-6 shadow-lg hover:shadow-2xl transition-shadow duration-500">
+              <a
+                href={project.image}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="relative block overflow-hidden rounded-2xl bg-gray-100 dark:bg-gray-900 aspect-[16/10] mb-6 shadow-lg hover:shadow-2xl transition-shadow duration-500">
                 {/* Overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10" />
                 
                 {/* View Project Button */}
                 <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-20">
-                  <div className="bg-white dark:bg-gray-900 text-text-primary px-6 py-3 rounded-full flex items-center gap-2 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500 shadow-xl">
+                  <div className="bg-white dark:bg-gray-900 text-black dark:text-white px-6 py-3 rounded-full flex items-center gap-2 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500 shadow-xl">
                     <span className="font-medium">View Project</span>
                     <ExternalLink className="w-4 h-4" />
                   </div>
@@ -127,7 +136,7 @@ export function SelectedWork() {
                 <div className="absolute top-4 right-4 bg-white/90 dark:bg-gray-900/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-medium text-text-primary z-10">
                   {project.year}
                 </div>
-              </div>
+              </a>
 
               <div className="space-y-4">
                 {/* Category */}
