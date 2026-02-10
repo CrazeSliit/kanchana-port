@@ -162,7 +162,7 @@ export function SelectedWork() {
                   {project.tags.map((tag, i) =>
                   <span
                     key={i}
-                    className="px-3 py-1 text-xs rounded-full bg-gray-100 dark:bg-gray-800 text-text-secondary border border-gray-200 dark:border-gray-700">
+                    className="px-3 py-1 text-xs rounded-full bg-gray-100 dark:bg-gray-800 text-black border border-gray-200 dark:border-gray-700">
                       {tag}
                     </span>
                   )}
