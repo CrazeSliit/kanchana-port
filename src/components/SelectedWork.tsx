@@ -133,7 +133,7 @@ export function SelectedWork() {
                   className="w-full h-full object-cover" />
 
                 {/* Year Badge */}
-                <div className="absolute top-4 right-4 bg-white/90 dark:bg-gray-900/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-medium text-text-primary z-10">
+                <div className="absolute top-4 right-4 bg-white/90 dark:bg-gray-900/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-medium text-black z-10">
                   {project.year}
                 </div>
               </a>
