@@ -208,14 +208,14 @@ export function Hero() {
             delay: 0.2,
             ease: [0.22, 1, 0.36, 1]
           }}
-          className="relative order-1 md:order-2 flex justify-center md:justify-end">
+          className="relative order-1 md:order-2 flex justify-center md:justify-end -mt-8 md:-mt-40">
 
           <div className="relative group">
             {/* Red accent line - visible on hover */}
             <div className="absolute -left-3 top-8 bottom-8 w-[3px] bg-accent opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-full" />
 
             {/* Image container */}
-            <div className="relative w-80 sm:w-96 md:w-[28rem] lg:w-[32rem] aspect-[3/4] overflow-hidden rounded-lg shadow-2xl shadow-black/20 dark:shadow-black/40">
+            <div className="relative w-96 sm:w-[28rem] md:w-[34rem] lg:w-[38rem] aspect-[3/4] overflow-hidden rounded-lg shadow-2xl shadow-black/20 dark:shadow-black/40">
               <motion.img
                 src="/Untitled_design_(10).png"
                 alt="Kanchana - Web Designer"

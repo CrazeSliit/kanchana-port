@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import { Moon, Sun, Menu, X } from 'lucide-react';
-import { useTheme } from '../hooks/useTheme';
+import { Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 export function Navigation() {
-  const { theme, toggleTheme } = useTheme();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   useEffect(() => {
@@ -58,23 +56,10 @@ export function Navigation() {
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-accent group-hover/link:w-full transition-all duration-300" />
             </a>
           )}
-          <button
-            onClick={toggleTheme}
-            className="p-2 text-text-secondary hover:text-accent transition-all duration-300 hover:rotate-12"
-            aria-label="Toggle theme">
-
-            {theme === 'dark' ? <Sun size={20} /> : <Moon size={20} />}
-          </button>
         </div>
 
         {/* Mobile Menu Button */}
-        <div className="flex items-center space-x-4 md:hidden z-50">
-          <button
-            onClick={toggleTheme}
-            className="p-2 text-text-secondary hover:text-accent transition-colors">
-
-            {theme === 'dark' ? <Sun size={20} /> : <Moon size={20} />}
-          </button>
+        <div className="flex items-center md:hidden z-50">
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             className="text-text-primary p-2">

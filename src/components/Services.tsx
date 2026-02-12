@@ -22,9 +22,9 @@ const services = [
 },
 {
   icon: Monitor,
-  title: 'Web Development',
+  title: 'UI/UX Design',
   description:
-  'Implementation of designs using modern frontend technologies with a focus on performance and accessibility.'
+  'Crafting intuitive user interfaces and seamless experiences that delight users and drive engagement.'
 }];
 
 export function Services() {

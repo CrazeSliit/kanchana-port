@@ -4,48 +4,48 @@ import { ArrowUpRight, ExternalLink } from 'lucide-react';
 const projects = [
 {
   id: 1,
-  title: 'Business Portfolio',
-  category: 'Web Design',
+  title: 'Craft Design Solutions',
+  category: 'UI/UX Design',
   year: '2024',
-  description: 'Professional portfolio layout for a modern brand.',
-  image: '/bussnuss portfolio.png',
-  tags: ['Portfolio', 'Branding', 'UI/UX']
+  description: 'Clean and intuitive Web interface with modern design patterns.',
+  image: '/08e64096751695.5eb5a9ad39364.png',
+  tags: ['Web', 'UI/UX', 'Design']
 },
 {
   id: 2,
-  title: 'Hospital Management System',
-  category: 'Web Application',
+  title: 'Dashboard Analytics',
+  category: 'UI Design',
   year: '2024',
-  description: 'Streamlined hospital operations and patient records.',
-  image: '/hostital management systeem.png',
-  tags: ['Dashboard', 'Healthcare', 'Admin']
+  description: 'Data visualization dashboard with seamless user experience.',
+  image: '/99ff7a141193065.624f01f56ff4e.jpg',
+  tags: ['Dashboard', 'Analytics', 'UI/UX']
 },
 {
   id: 3,
-  title: 'Call Support Center',
-  category: 'Web Application',
-  year: '2024',
-  description: 'Agent-friendly interface for support workflows.',
-  image: '/Call support center.png',
-  tags: ['Support', 'CRM', 'Productivity']
+  title: 'Art Gallery E-Commerce',
+  category: 'UX Design',
+  year: '2025',
+  description: 'User-centered Art purchasing experience with intuitive navigation.',
+  image: '/UYGqt9xnt2gSfQSKBJQWyN.jpg',
+  tags: ['E-Commerce', 'UI/UX', 'Responsive']
 },
 {
   id: 4,
-  title: 'Student Learning System',
-  category: 'Education Platform',
+  title: 'Booking and Travel',
+  category: 'UI/UX Design',
   year: '2024',
-  description: 'Learning portal with clear progress tracking.',
-  image: '/studnt lerning systeem .png',
-  tags: ['EdTech', 'LMS', 'UX']
+  description: 'Comprehensive design system with reusable components and guidelines.',
+  image: '/web-design-concepts-tubik-studio-1.png',
+  tags: ['Design System', 'UI ', 'Component']
 },
 {
   id: 5,
-  title: 'Travel Guide Website',
-  category: 'Marketing Site',
-  year: '2024',
-  description: 'Inspiring travel stories with rich visuals.',
-  image: '/travel guide website.png',
-  tags: ['Travel', 'Content', 'Web']
+  title: 'POS System Dashboard',
+  category: 'UI Design',
+  year: '2025',
+  description: 'Modern Dashboard showcase with stunning visual hierarchy.',
+  image: '/4e185c241955437.Y3JvcCwyNzk3LDIxODgsMCww.png',
+  tags: ['Dashboard', 'UI/UX', 'Creative']
 }];
 
 export function SelectedWork() {
@@ -193,8 +193,8 @@ export function SelectedWork() {
             href="#"
             className="inline-flex items-center gap-2 text-text-primary hover:text-[#c41e3a] transition-colors duration-300 group/link">
 
-            <span className="text-lg font-medium">View All Projects</span>
-            <ArrowUpRight className="w-5 h-5 transform group-hover/link:translate-x-1 group-hover/link:-translate-y-1 transition-transform duration-300" />
+            
+            
           </a>
         </motion.div>
       </div>
